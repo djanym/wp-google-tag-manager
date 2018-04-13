@@ -30,13 +30,10 @@ class Gotama {
 	 */
 	function admin_settings_page_menu(){
 		//create settings-evel menu
-		add_options_page(
-			'Google Tag Manager', 
-      'Google Tag Manager', 
-      'manage_options', 
-      'gotama-settings', 
-      array( $this, 'admin_settings_page_content' )
-    );
+		add_options_page( 'Google Tag Manager', 'Google Tag Manager', 'manage_options', 'gotama-settings', array(
+			$this,
+			'admin_settings_page_content' 
+		) );
 	}
 	
 	/*
